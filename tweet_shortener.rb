@@ -9,4 +9,10 @@ def dictionary
     "at" => "@",
     "and" => "&"
   }
+  return substitutes
+end
+
+def word_substituter(tweet)
+  tweet_array = tweet.split
+  
 end
