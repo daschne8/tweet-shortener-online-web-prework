@@ -20,7 +20,7 @@ def word_substituter(tweet)
   keys = substitutes.keys
   new_array = []
   tweet_array.collect do |word|
-    if keys.include?(word)
+    if keys.include?(word.lowercase)
       word = substitutes[word]
     end
     new_array << word
@@ -32,7 +32,3 @@ def bulk_tweet_shortener(array)
   array.each { |tweet| puts word_substituter(tweet)  }
 end
 
-twit = "I can't wait to be converted"
-twit2 = "Holla at you"
-twits = [twit,twit2]
-bulk_tweet_shortener(twits)
