@@ -31,3 +31,10 @@ end
 def bulk_tweet_shortener(array)
   array.each { |tweet| puts word_substituter(tweet)  }
 end
+
+def selective_tweet_shortener(tweet)
+  if tweet.length > 140
+    return word_substituter(tweet)
+  end
+  return tweet
+end
