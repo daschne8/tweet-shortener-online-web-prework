@@ -31,4 +31,6 @@ def bulk_tweet_shortener(array)
 end
 
 twit = "I can't wait to be converted"
-puts word_substituter(twit)
+twit2 = "Holla at you"
+twits = [twit,twit2]
+bulk_tweet_shortener(twits)
