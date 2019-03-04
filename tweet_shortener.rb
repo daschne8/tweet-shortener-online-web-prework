@@ -29,3 +29,6 @@ end
 def bulk_tweet_shortener(array)
   array.each { |tweet| puts word_substituter(tweet)  }
 end
+
+twit = "I can't wait to be converted"
+puts word_substituter(twit)
